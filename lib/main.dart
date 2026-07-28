@@ -10,6 +10,7 @@ final theme = ThemeData(
     brightness: Brightness.dark,
     seedColor: const Color.fromARGB(255, 131, 57, 0),
   ),
+  // flutter pub add google_fonts
   textTheme: GoogleFonts.latoTextTheme(),
 );
 
