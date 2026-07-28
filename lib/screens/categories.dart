@@ -13,6 +13,7 @@ class CategoriesScreen extends StatelessWidget {
         title: Text('Pick your category'),
       ),
       body: GridView(
+        padding: const EdgeInsets.all(24),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 3 / 2,
@@ -22,7 +23,7 @@ class CategoriesScreen extends StatelessWidget {
         children: [
           // availableCategories.map((category) => CategoryGridItem(category: category)).toList()
           for (final category in availableCategories)
-          CategoryGridItem(category: category)
+            CategoryGridItem(category: category),
         ],
       ),
     );
